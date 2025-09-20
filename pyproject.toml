@@ -35,7 +35,7 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/PratyushTripathy/landstac"
-Source = "https://github.com/PratyushTripathy/landstac"
+Documentation = "https://landstac.readthedocs.io/en/latest/"
 Issues = "https://github.com/PratyushTripathy/landstac/issues"
 
 [tool.setuptools.packages.find]
