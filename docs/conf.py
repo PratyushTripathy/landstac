@@ -1,12 +1,17 @@
-from importlib.metadata import version, PackageNotFoundError
+# --- top of docs/conf.py ---
+from importlib.metadata import version as pkg_version, PackageNotFoundError
 
 project = "landsatlook-stac"
 author = "Pratyush Tripathy"
 
 try:
-    release = version("landsatlook-stac")
+    release = pkg_version("landsatlook-stac")  # full version, e.g. 0.1.0
 except PackageNotFoundError:
     release = "0.0.0"
+
+# Sphinx expects `version` (short X.Y) to be a STRING
+version = ".".join(release.split(".")[:2])     # e.g. "0.1"
+
 
 extensions = [
     "myst_parser",
