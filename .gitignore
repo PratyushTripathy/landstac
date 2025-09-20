@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local data and caches
+data/
+downloads/
+cache/
+*.tif
+*.tiff
+*.vrt
+
+# Credentials and cookies
+credentials.json
+*.env
+*.dotenv
+*.secrets
+usgs_cookies.txt
+*.cookies
+
+# Jupyter
+.ipynb_checkpoints/
+
+# --- Python build & packaging ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+.dist-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# --- Virtual envs (keep your environment*.yml tracked) ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Tests & coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# --- Lint/type checker caches ---
+.ruff_cache/
+.mypy_cache/
+
+# --- OS/IDE junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Project data & artifacts (don’t commit large rasters) ---
+data/
+downloads/
+cache/
+*.tif
+*.tiff
+*.vrt
+*.log
+
+# --- Secrets / auth cookies (NEVER commit) ---
+credentials.json
+*.env
+*.dotenv
+*.secrets
+usgs_cookies.txt
+*.cookies
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Sphinx (build outputs & autosummary stubs) ---
+docs/_build/
+docs/_doctrees/
+docs/_autosummary/
+

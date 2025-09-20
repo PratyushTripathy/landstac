@@ -1,0 +1,13 @@
+name: landstac
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - requests>=2.31
+  - pystac-client=0.9.*      # pairs well with our code
+  - rasterio=1.4.*           # tested with GDAL 3.10
+  - gdal=3.10.*              # keep in sync with rasterio
+  - rioxarray=0.19.*         # xarray + rasterio bridge
+  - beautifulsoup4>=4.12     # for ERS login form parsing
+  - tqdm>=4.66               # progress bars (optional but handy)
+  - pip

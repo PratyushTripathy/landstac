@@ -1,0 +1,18 @@
+# Always include license and readme
+include LICENSE
+include README.md
+
+# Exclude credentials and cookies if someone created them near the repo
+exclude credentials.json
+global-exclude credentials.json
+global-exclude *.env *.dotenv *.secrets
+global-exclude usgs_cookies.txt *.cookies
+
+# Exclude Python junk and OS files
+global-exclude __pycache__ *.py[cod] *.pyo .DS_Store Thumbs.db
+
+# Exclude data and notebooks unless you want them in the sdist
+prune data
+prune downloads
+prune cache
+prune examples/*.ipynb

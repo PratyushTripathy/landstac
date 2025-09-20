@@ -1,0 +1,33 @@
+name: landstac-dev
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  # runtime deps
+  - requests>=2.31
+  - pystac-client=0.9.*
+  - rasterio=1.4.*
+  - gdal=3.10.*
+  - rioxarray=0.19.*
+  - beautifulsoup4>=4.12
+  - tqdm>=4.66
+  # build/publish (conda)
+  - setuptools>=68
+  - wheel
+  - python-build
+  # test/lint
+  - pytest
+  - pytest-cov
+  - ruff
+  - black
+  - sphinx>=7
+  - myst-parser>=2              # Markdown support
+  - furo                        # nice theme
+  - sphinx-autobuild            # live reload (optional)
+  - sphinx-copybutton           # copy code buttons
+  - sphinx-design               # nicer admonitions/blocks (optional)
+  - pip
+  - pip:
+      - twine
+      # (optional) pin to dodge docutils 0.22.1 if you ever pull it via pip deps
+      # - docutils<0.22
