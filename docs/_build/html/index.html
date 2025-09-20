@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Installation" href="installation.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>landsatlook-stac 0.1.0 documentation</title>
+        <title>LandsatLook STAC Documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -168,7 +168,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">landsatlook-stac 0.1.0 documentation</div></a>
+      <a href="#"><div class="brand">LandsatLook STAC Documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -180,7 +180,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -192,7 +192,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
   
   
-  <span class="sidebar-brand-text">landsatlook-stac 0.1.0 documentation</span>
+  <span class="sidebar-brand-text">LandsatLook STAC Documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -200,7 +200,22 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.auth.html">landstac.auth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.stac.html">landstac.stac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.download.html">landstac.download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.read.html">landstac.read</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.utils.html">landstac.utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.exceptions.html">landstac.exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.types.html">landstac.types</a></li>
+</ul>
+</li>
+</ul>
+
 </div>
 </div>
 
@@ -219,7 +234,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="_sources/index.md.txt" title="View this page">
+  <a class="muted-link" href="_sources/index.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -233,21 +248,170 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="landsatlook-stac">
-<h1>landsatlook-stac<a class="headerlink" href="#landsatlook-stac" title="Link to this heading">¶</a></h1>
-<p><strong>Import name:</strong> <code class="docutils literal notranslate"><span class="pre">landstac</span></code><br />
-Search the LandsatLook STAC API and access protected assets via USGS ERS auth.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
-mamba<span class="w"> </span>activate<span class="w"> </span>landstac
-pip<span class="w"> </span>install<span class="w"> </span>landsatlook-stac
+          <section id="landstac-documentation">
+<h1>landstac Documentation<a class="headerlink" href="#landstac-documentation" title="Link to this heading">¶</a></h1>
+<p>Search and download Landsat imagery from USGS with Python.</p>
+<p><code class="docutils literal notranslate"><span class="pre">landstac</span></code> connects to the USGS LandsatLook STAC API to search Landsat Collection 2 data and download protected assets with authentication.</p>
+<section id="core-capabilities">
+<h2>Core capabilities<a class="headerlink" href="#core-capabilities" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Search</strong>: Find Landsat scenes by location, date, and cloud cover</p></li>
+<li><p><strong>Authenticate</strong>: Handle USGS login automatically</p></li>
+<li><p><strong>Download</strong>: Get individual bands or full scenes</p></li>
+<li><p><strong>Stack</strong>: Combine bands into multi-band GeoTIFFs</p></li>
+<li><p><strong>Stream</strong>: Access data without downloading via GDAL integration</p></li>
+</ul>
+</section>
+<section id="available-collections">
+<h2>Available Collections<a class="headerlink" href="#available-collections" title="Link to this heading">¶</a></h2>
+<p>The LandsatLook STAC API provides access to Landsat Collection 2 datasets:</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 15.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Collection ID</p></th>
+<th class="head"><p>Product Level</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2l1</span></code></p></td>
+<td><p>Level-1</p></td>
+<td><p>TOA reflectance and brightness temperature</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2l2-sr</span></code></p></td>
+<td><p>Level-2 UTM</p></td>
+<td><p>Surface Reflectance (SR) Product</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2l2-st</span></code></p></td>
+<td><p>Level-2 UTM</p></td>
+<td><p>Surface Temperature (ST) Product</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2l2alb-sr</span></code></p></td>
+<td><p>Level-2 Albers</p></td>
+<td><p>Albers Surface Reflectance (SR) Product</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2l2alb-st</span></code></p></td>
+<td><p>Level-2 Albers</p></td>
+<td><p>Albers Surface Temperature (ST) Product</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2l2alb-bt</span></code></p></td>
+<td><p>Level-2 Albers</p></td>
+<td><p>Albers Top of Atmosphere Brightness Temperature (BT) Product</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2l2alb-ta</span></code></p></td>
+<td><p>Level-2 Albers</p></td>
+<td><p>Albers Top of Atmosphere (TA) Reflectance Product</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2l3-fsca</span></code></p></td>
+<td><p>Level-3</p></td>
+<td><p>Fractional Snow Covered Area (fSCA) Product</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2l3-ba</span></code></p></td>
+<td><p>Level-3</p></td>
+<td><p>Burned Area (BA) Product</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2l3-dswe</span></code></p></td>
+<td><p>Level-3</p></td>
+<td><p>Dynamic Surface Water Extent (DSWE) Product</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2ard-sr</span></code></p></td>
+<td><p>ARD</p></td>
+<td><p>Analysis Ready Data Surface Reflectance (SR) Product</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2ard-st</span></code></p></td>
+<td><p>ARD</p></td>
+<td><p>Analysis Ready Data Surface Temperature (ST) Product</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2ard-bt</span></code></p></td>
+<td><p>ARD</p></td>
+<td><p>Analysis Ready Data Top of Atmosphere Brightness Temperature (BT) Product</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">landsat-c2ard-ta</span></code></p></td>
+<td><p>ARD</p></td>
+<td><p>Analysis Ready Data Top of Atmosphere (TA) Reflectance Product</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>For an updated list of available collections, visit: <a class="reference external" href="https://stacindex.org/catalogs/usgs-landsat-collection-2-api">https://stacindex.org/catalogs/usgs-landsat-collection-2-api</a></p>
+<p>Supported sensors include Landsat 4-5 TM, Landsat 7 ETM+, Landsat 8 OLI/TIRS, and Landsat 9 OLI-2/TIRS-2.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#install-from-pypi">Install from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#development-installation">Development Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#authentication-setup">Authentication Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#verification">Verification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#search-for-data">1. Search for Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#authentication">2. Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#read-files-in-memory">3. Read Files in Memory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#read-with-overview">4. Read with Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#export-files-to-drive">5. Export Files to Drive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#working-with-multiple-collections">6. Working with Multiple Collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#working-with-utility-functions">7. Working with Utility Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.auth.html">landstac.auth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.stac.html">landstac.stac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.download.html">landstac.download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.read.html">landstac.read</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.utils.html">landstac.utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.exceptions.html">landstac.exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.types.html">landstac.types</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h2>
+<p>Install the package and start searching Landsat data:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>landsatlook-stac
 </pre></div>
 </div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">landstac</span>
+
+<span class="n">stac</span> <span class="o">=</span> <span class="n">landstac</span><span class="o">.</span><span class="n">LandsatLookSTAC</span><span class="p">()</span>
+<span class="n">items</span> <span class="o">=</span> <span class="n">stac</span><span class="o">.</span><span class="n">search</span><span class="p">(</span>
+    <span class="n">collections</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;landsat-c2l2-sr&quot;</span><span class="p">],</span>
+    <span class="n">max_items</span><span class="o">=</span><span class="mi">10</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>See the <a class="reference internal" href="installation.html"><span class="doc">Installation</span></a> guide for detailed setup instructions and the <a class="reference internal" href="examples.html"><span class="doc">Examples</span></a> page for comprehensive usage examples.</p>
+</section>
+<section id="support-contact">
+<h2>Support &amp; Contact<a class="headerlink" href="#support-contact" title="Link to this heading">¶</a></h2>
+<p><strong>Author</strong>: Pratyush Tripathy</p>
+<p>Found a bug or have a feature request? Please report issues on the <a class="reference external" href="https://github.com/PratyushTripathy/landstac/issues">GitHub Issues page</a>.</p>
+<p>Contributions and feedback are welcome!</p>
+</section>
+<section id="quick-links">
+<h2>Quick Links<a class="headerlink" href="#quick-links" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>STAC Browser</strong>: <a class="reference external" href="https://landsatlook.usgs.gov/stac-browser/">https://landsatlook.usgs.gov/stac-browser/</a></p></li>
+<li><p><strong>Collection Catalog</strong>: <a class="reference external" href="https://stacindex.org/catalogs/usgs-landsat-collection-2-api">https://stacindex.org/catalogs/usgs-landsat-collection-2-api</a></p></li>
+<li><p><strong>USGS ERS Registration</strong>: <a class="reference external" href="https://ers.cr.usgs.gov/register/">https://ers.cr.usgs.gov/register/</a></p></li>
+</ul>
+</section>
 </section>
 
         </article>
@@ -255,13 +419,21 @@ pip<span class="w"> </span>install<span class="w"> </span>landsatlook-stac
       <footer>
         
         <div class="related-pages">
-          
+          <a class="next-page" href="installation.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Installation</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
           
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 
+                Copyright &#169; 2025, Pratyush Tripathy
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -275,8 +447,31 @@ pip<span class="w"> </span>install<span class="w"> </span>landsatlook-stac
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">landstac Documentation</a><ul>
+<li><a class="reference internal" href="#core-capabilities">Core capabilities</a></li>
+<li><a class="reference internal" href="#available-collections">Available Collections</a></li>
+<li><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li><a class="reference internal" href="#support-contact">Support &amp; Contact</a></li>
+<li><a class="reference internal" href="#quick-links">Quick Links</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

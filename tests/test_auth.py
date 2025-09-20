@@ -20,3 +20,7 @@ def test_save_cookies_for_gdal(tmp_path):
     with open(cookie_file, "r", encoding="utf-8", errors="ignore") as f:
         txt = f.read()
     assert "ers_session" in txt
+
+def test_ers_login_from_file_env_fallback(tmp_path, monkeypatch):
+    monkeypatch.setenv("USGS_USER", "env_user")
+    monkeypatch.setenv("USGS_PASS", "env_pass")

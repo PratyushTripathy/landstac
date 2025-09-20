@@ -3,6 +3,7 @@ from importlib.metadata import version as pkg_version, PackageNotFoundError
 
 project = "landsatlook-stac"
 author = "Pratyush Tripathy"
+copyright = "2025, Pratyush Tripathy"
 
 try:
     release = pkg_version("landsatlook-stac")  # full version, e.g. 0.1.0
@@ -12,6 +13,7 @@ except PackageNotFoundError:
 # Sphinx expects `version` (short X.Y) to be a STRING
 version = ".".join(release.split(".")[:2])     # e.g. "0.1"
 
+html_title = "LandsatLook STAC Documentation"
 
 extensions = [
     "myst_parser",
@@ -34,6 +36,17 @@ autosummary_generate = True
 autodoc_typehints = "description"
 napoleon_google_docstring = True
 napoleon_numpy_docstring = True
+
+autodoc_default_options = {
+    'members': True,
+    'undoc-members': True,
+    'show-inheritance': True,
+}
+
+# Path to your source code (add this near the top, after imports)
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
 
 intersphinx_mapping = {
     "python":   ("https://docs.python.org/3", None),

@@ -60,7 +60,18 @@ def _submit_login_form(s: requests.Session, username: str, password: str) -> Non
 def ers_login(username: str, password: str, token: str | None = None) -> requests.Session:
     """
     Log in to ERS and return an authenticated session.
-    If token is provided and accepted by the host, it is attached as Authorization.
+
+    Args:
+        username (str): USGS ERS username.
+        password (str): USGS ERS password.
+        token (str, optional): Optional bearer token for authorization header.
+
+    Returns:
+        requests.Session: Authenticated session with ERS cookies.
+
+    Note:
+        If token is provided and accepted by the host, it is attached as
+        Authorization header.
     """
     s = make_session()
     _submit_login_form(s, username, password)
@@ -74,12 +85,20 @@ def ers_login_from_file(credentials_path: str = "credentials.json") -> requests.
     """
     Read credentials.json and perform ERS login.
 
-    credentials.json schema:
-    {
-      "username": "...",
-      "password": "...",
-      "token": null
-    }
+    Args:
+        credentials_path (str): Path to credentials JSON file.
+
+    Returns:
+        requests.Session: Authenticated session.
+
+    Note:
+        credentials.json schema::
+
+            {
+              "username": "...",
+              "password": "...",
+              "token": null
+            }
     """
     if not os.path.exists(credentials_path):
         raise AuthError(f"Credentials file not found: {credentials_path}")
@@ -97,9 +116,19 @@ def ers_login_from_file(credentials_path: str = "credentials.json") -> requests.
 def save_cookies_for_gdal(session: requests.Session, cookiefile: str = "usgs_cookies.txt") -> str:
     """
     Save current session cookies into a Mozilla cookie file.
-    Return absolute path. Use with GDAL via env vars:
-      CPL_CURL_COOKIEFILE=cookiefile
-      CPL_CURL_COOKIEJAR=cookiefile
+
+    Args:
+        session (requests.Session): Authenticated session.
+        cookiefile (str): Path to save cookie file.
+
+    Returns:
+        str: Absolute path to saved cookie file.
+
+    Note:
+        Use with GDAL via environment variables::
+
+            CPL_CURL_COOKIEFILE=cookiefile
+            CPL_CURL_COOKIEJAR=cookiefile
     """
     cj = MozillaCookieJar(cookiefile)
     # Populate from the session's cookie jar

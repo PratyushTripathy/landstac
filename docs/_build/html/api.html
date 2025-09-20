@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="landstac.auth" href="_autosummary/landstac.auth.html" /><link rel="prev" title="Examples" href="examples.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>docs/api.md - landsatlook-stac 0.1.0 documentation</title>
+        <title>API Reference - LandsatLook STAC Documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -168,7 +168,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">landsatlook-stac 0.1.0 documentation</div></a>
+      <a href="index.html"><div class="brand">LandsatLook STAC Documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -192,7 +192,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">landsatlook-stac 0.1.0 documentation</span>
+  <span class="sidebar-brand-text">LandsatLook STAC Documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -200,7 +200,22 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.auth.html">landstac.auth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.stac.html">landstac.stac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.download.html">landstac.download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.read.html">landstac.read</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.utils.html">landstac.utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.exceptions.html">landstac.exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/landstac.types.html">landstac.types</a></li>
+</ul>
+</li>
+</ul>
+
 </div>
 </div>
 
@@ -219,7 +234,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="_sources/api.md.txt" title="View this page">
+  <a class="muted-link" href="_sources/api.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -239,23 +254,34 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="docs-api-md">
-<h1><code class="docutils literal notranslate"><span class="pre">docs/api.md</span></code><a class="headerlink" href="#docs-api-md" title="Link to this heading">¶</a></h1>
-<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># API reference</span>
-
-```{autosummary}
-:toctree: _autosummary
-:recursive:
-
-landstac
-landstac.auth
-landstac.stac
-landstac.download
-landstac.read
-landstac.utils
-landstac.exceptions
-landstac.types
-</pre></div>
+          <section id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/landstac.auth.html#module-landstac.auth" title="landstac.auth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">landstac.auth</span></code></a></p></td>
+<td><p>ERS authentication and session helpers.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/landstac.stac.html#module-landstac.stac" title="landstac.stac"><code class="xref py py-obj docutils literal notranslate"><span class="pre">landstac.stac</span></code></a></p></td>
+<td><p>Thin wrapper around pystac-client for querying the LandsatLook STAC API.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/landstac.download.html#module-landstac.download" title="landstac.download"><code class="xref py py-obj docutils literal notranslate"><span class="pre">landstac.download</span></code></a></p></td>
+<td><p>Download helpers for LandsatLook asset HREFs.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/landstac.read.html#module-landstac.read" title="landstac.read"><code class="xref py py-obj docutils literal notranslate"><span class="pre">landstac.read</span></code></a></p></td>
+<td><p>Read helpers for opening STAC assets as xarray DataArrays.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/landstac.utils.html#module-landstac.utils" title="landstac.utils"><code class="xref py py-obj docutils literal notranslate"><span class="pre">landstac.utils</span></code></a></p></td>
+<td><p>Utility helpers for geometry conversion and normalization.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/landstac.exceptions.html#module-landstac.exceptions" title="landstac.exceptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">landstac.exceptions</span></code></a></p></td>
+<td><p>Package-specific exceptions for landstac.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/landstac.types.html#module-landstac.types" title="landstac.types"><code class="xref py py-obj docutils literal notranslate"><span class="pre">landstac.types</span></code></a></p></td>
+<td><p>Shared types and aliases for landstac.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
 
@@ -264,13 +290,31 @@ landstac.types
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="_autosummary/landstac.auth.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">landstac.auth</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="examples.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Examples</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 
+                Copyright &#169; 2025, Pratyush Tripathy
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
