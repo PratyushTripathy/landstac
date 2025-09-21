@@ -2,6 +2,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/landsatlook-stac.svg)](https://pypi.org/project/landsatlook-stac/)
 [![Docs](https://readthedocs.org/projects/landstac/badge/?version=latest)](https://landstac.readthedocs.io/en/latest/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17168071.svg)](https://doi.org/10.5281/zenodo.17168071)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Import name:** `landstac`
@@ -41,3 +42,20 @@ pip install landsatlook-stac
 Found a bug or have a feature request? Please report issues on the [GitHub Issues page](https://github.com/PratyushTripathy/landstac/issues).
 
 Contributions and feedback are welcome!
+
+## Citation
+
+If you use this software in your work, please cite it:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17168071.svg)](https://doi.org/10.5281/zenodo.17168071)
+
+```bibtex
+@software{tripathy_landstac_2025,
+  author       = {Tripathy, Pratyush},
+  title        = {PratyushTripathy/landstac},
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.17168071},
+  url          = {https://github.com/PratyushTripathy/landstac}
+}
+```

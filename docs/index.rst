@@ -3,6 +3,22 @@ landstac Documentation
 
 Search and download Landsat imagery from USGS with Python.
 
+.. image:: https://img.shields.io/pypi/v/landsatlook-stac.svg
+   :target: https://pypi.org/project/landsatlook-stac/
+   :alt: PyPI
+
+.. image:: https://readthedocs.org/projects/landstac/badge/?version=latest
+   :target: https://landstac.readthedocs.io/en/latest/
+   :alt: Documentation Status
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.17168071.svg
+   :target: https://doi.org/10.5281/zenodo.17168071
+   :alt: DOI
+
+.. image:: https://img.shields.io/badge/License-MIT-green.svg
+   :target: LICENSE
+   :alt: License: MIT
+
 ``landstac`` connects to the USGS LandsatLook STAC API to search Landsat Collection 2 data and download protected assets with authentication.
 
 Core capabilities
@@ -111,6 +127,25 @@ Support & Contact
 Found a bug or have a feature request? Please report issues on the `GitHub Issues page <https://github.com/PratyushTripathy/landstac/issues>`_.
 
 Contributions and feedback are welcome!
+
+Citation
+--------
+
+If you use this software in your research, please cite it:
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.17168071.svg
+   :target: https://doi.org/10.5281/zenodo.17168071
+
+.. code-block:: bibtex
+
+   @software{tripathy_landstac_2025,
+     author       = {Tripathy, Pratyush},
+     title        = {PratyushTripathy/landstac},
+     year         = 2025,
+     publisher    = {Zenodo},
+     doi          = {10.5281/zenodo.17168071},
+     url          = {https://github.com/PratyushTripathy/landstac}
+   }
 
 Quick Links
 -----------
